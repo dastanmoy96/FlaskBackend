@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import pandas as pd
 
-model = pickle.load(open('E:/MiniProject2024/MiniProject2024Backend/Models/model.pkl', 'rb'))
+model = pickle.load(open('/model.pkl', 'rb'))
 
 app = Flask(__name__)
 
