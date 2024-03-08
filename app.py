@@ -24,9 +24,9 @@ def predict():
     temperature = "temperature"
     input_query = np.array([[latitude, longitude, wind, wind_degree, pressure, precipitation, humidity, cloud]])
     result = model.predict(input_query)[0]
+    print (jsonify({'temperature' : str(result)}))
     return jsonify({'temperature' : str(result)})
 
-    return jsonify(result)
 
 if __name__ == '__main__':
     app.run(debug=True)
